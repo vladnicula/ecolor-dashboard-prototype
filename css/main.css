@@ -1,0 +1,12 @@
+body {
+  padding-top: 50px;
+}
+.home-intro-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.home-intro-template .lead {
+	max-width: 700px;
+	margin: 0 auto;
+}

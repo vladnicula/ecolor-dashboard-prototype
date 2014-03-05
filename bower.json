@@ -1,0 +1,24 @@
+{
+  "name": "ecolor-dashboard-prototype",
+  "version": "0.0.0",
+  "homepage": "https://github.com/vladnicula/ecolor-dashboard-prototype",
+  "authors": [
+    "Vlad Nicula <vladnicula@gmail.com>"
+  ],
+  "description": "Ecolor Dashboard Prototype",
+  "main": "index.html",
+  "keywords": [
+    "ecolor",
+    "dashboard",
+    "charts"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

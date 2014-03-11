@@ -187,3 +187,32 @@ body {
 		font-size: 14px;
 	}
 }
+
+
+.info-section .info-sub-section.invoices-untill-today {
+	width: 33%;
+	padding-top: 40px;
+}
+
+.invoices-chart {
+	width: 67%;
+	height: 100%;
+}
+
+#invoicesPerMonthChartContainer {
+	height: 150px;
+	width: 100%;
+	background: #f30;
+}
+
+@media (max-width:720px) { 
+	.info-section .info-sub-section.invoices-untill-today {
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
+
+	.info-section .info-sub-section.invoices-chart {
+		padding-top : 10px;	
+	}
+}

@@ -4,27 +4,26 @@
 
 $(function () {
 
-	
-	
-	var chart = new CanvasJS.Chart("chartContainer", {
+  var secondChart = new CanvasJS.Chart("invoicesPerMonthChartContainer", {
       title:{
-          text: "Units produces/machine yesterday"              
+          text: "Invoices per month"              
       },
       data: [              
         {
             type: "column",
             dataPoints: [
-              { label: "machine-01", y: 10 },
-              { label: "machine-02", y: 15 },
-              { label: "machine-03", y: 25 },
-              { label: "machine-04", y: 30 },
-              { label: "machine-05", y: 28 }
+              { label: "jan", y: 10 },
+              { label: "feb", y: 15 },
+              { label: "mar", y: 25 },
+              { label: "apr", y: 30 },
+              { label: "may", y: 28 }
             ]
         }
       ]
   });
 
-  chart.render();
+  secondChart.render();
+
 });
 
 }(jQuery));

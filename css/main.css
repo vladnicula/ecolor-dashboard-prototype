@@ -1,5 +1,7 @@
 body {
   padding-top: 50px;
+  background: #f3f3f3;
+  min-width: 320px;
 }
 .home-intro-template {
   padding: 40px 15px;
@@ -17,4 +19,171 @@ body {
 }
 .chart-container .canvasjs-chart-canvas {
 	left : 0;
+}
+
+.info-section {
+	overflow: auto;
+	text-align: left;
+	background: #fff;
+	box-shadow: 0 0 1px 1px rgba(0,0,0,.1);
+	max-width : 700px;
+	margin: 0 auto; 
+}
+
+.info-section h2 {
+	font-size: 20px;
+}
+
+.info-section h3 {
+	font-size: 14px;
+}
+
+.info-section .info-head {
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.info-section .info-sub-head {
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #888;
+	margin-bottom: 0;
+}
+
+.info-section .info-sub-section {
+	float : left;
+	-moz-box-sizing : border-box;
+	box-sizing : border-box;
+	padding : 20px;
+}
+
+.info-section .info-important-number {
+	font-size: 55px;
+	color: #0082ca;
+	margin-bottom: 0;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.info-section .info-number {
+	font-size: 32px;
+	margin-bottom: 0;
+}
+
+.info-section .info-number.green {
+	color : #639514;
+}
+
+.info-section .info-number.red {
+	color : #CD151E;
+}
+
+.status-box {
+	width: 33%;
+	float : left;
+}
+
+.stock-info-section .stock-current-info {
+	width: 33%;
+}
+
+.stock-info-section .stock-statistics-info {
+	width: 67%;
+}
+
+.stock-info-section .stock-statistics-info .info-sub-head {
+	margin-bottom: 20px;
+}
+
+.iconmoon-icon {
+	position: relative;
+	top : 3px;
+}
+
+.stock-info-section .stock-statistics-info .stock-yoy-change .info-head {
+	margin-bottom: 15px;
+}
+
+@media (max-width:720px) {
+	.stock-info-section .stock-current-info {
+		width : 100%;
+	}
+	.info-important-number.stock-current-value, .info-wrapper {
+		float : left;
+	}
+	.info-important-number.stock-current-value {
+		margin-top: -10px;
+	}
+	.info-sub-section.stock-current-info {
+		padding-bottom: 10px;
+		border-bottom: 1px solid #eee;
+	}
+	.info-sub-section.stock-statistics-info {
+		padding-top: 10px;
+		border-top: 1px solid #fefefe;
+	}
+	.info-section .info-important-number {
+		font-size: 36px;
+		float : right;
+	}
+	.info-section .info-sub-section {
+		width: 100%;
+	}
+
+	.stock-info-section .stock-statistics-info .stock-lowest {
+		text-align: center;
+	}
+
+	.stock-info-section .stock-statistics-info .stock-yoy-change {
+		text-align: right;
+	}
+
+	.stock-info-section .stock-statistics-info .stock-yoy-change .info-head {
+		margin-bottom: 0;
+	}
+
+	.container, .home-intro-template {
+		padding: 0;
+	}
+}
+
+@media (max-width:600px) { 
+	.status-box {
+		width: 100%;
+		text-align: left;
+	}
+
+	.stock-info-section .stock-statistics-info .stock-yoy-change {
+		text-align: left;
+	}
+
+	.stock-info-section .stock-statistics-info .stock-lowest {
+		text-align: left;
+	}
+
+	.stock-info-section .stock-statistics-info .status-box .info-head {
+		float : left;
+		line-height: 35px;
+	}
+
+	.stock-info-section .stock-statistics-info .status-box .info-number {
+		float : right;
+		font-size: 26px;
+		margin-top : -2px;
+	}
+}
+
+@media (max-width: 380px) {
+	.info-section .info-important-number {
+		font-size: 26px;
+		margin-top: -5px;
+	}
+
+	.info-section .info-head {
+		font-size: 16px;
+	}
+
+	.info-section .status-box .info-head {
+		font-size: 14px;
+	}
 }

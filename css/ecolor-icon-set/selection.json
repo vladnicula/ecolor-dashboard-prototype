@@ -1,0 +1,99 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M832.020 128c-0.012 0-0.028 0-0.040 0h-383.98c-35.346 0-64 28.654-64 64s28.654 64 64 64h229.492l-530.746 530.746c-24.994 24.992-24.994 65.516 0 90.508 12.496 12.498 28.876 18.746 45.254 18.746s32.758-6.248 45.254-18.746l530.746-530.746v229.492c0 35.346 28.654 64 64 64s64-28.654 64-64v-448h-63.98z"
+				],
+				"tags": [
+					"arrow-up-right",
+					"up",
+					"right",
+					"arrow",
+					"top right",
+					"up right"
+				],
+				"grid": 16
+			},
+			"properties": {
+				"id": 297,
+				"order": 1,
+				"prevSize": 32,
+				"code": 58880,
+				"name": "arrow-up-right",
+				"ligatures": ""
+			},
+			"setIdx": 0,
+			"iconIdx": 297
+		},
+		{
+			"icon": {
+				"paths": [
+					"M896 448c0-35.348-28.652-64-64-64-35.346 0-64 28.652-64 64v229.492l-530.746-530.748c-24.992-24.992-65.516-24.992-90.508 0-12.498 12.498-18.746 28.878-18.746 45.256s6.248 32.758 18.746 45.254l530.746 530.746h-229.492c-35.346 0-64 28.654-64 64s28.654 64 64 64h448v-448z"
+				],
+				"tags": [
+					"arrow-down-right",
+					"down",
+					"right",
+					"arrow",
+					"bottom right",
+					"down right"
+				],
+				"grid": 16
+			},
+			"properties": {
+				"id": 299,
+				"order": 2,
+				"prevSize": 32,
+				"code": 58881,
+				"name": "arrow-down-right",
+				"ligatures": ""
+			},
+			"setIdx": 0,
+			"iconIdx": 299
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "ecolor-icon-set"
+	},
+	"preferences": {
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "ecolor-icon-set"
+			},
+			"showGlyphs": true,
+			"metrics": {
+				"emSize": 1024,
+				"baseline": 6.25,
+				"whitespace": 50
+			},
+			"resetPoint": 58880,
+			"showQuickUse": true,
+			"quickUsageToken": false,
+			"showMetrics": true,
+			"showMetadata": false,
+			"autoHost": true
+		},
+		"imagePref": {
+			"color": 0,
+			"height": 16,
+			"columns": 16,
+			"margin": 16,
+			"png": true,
+			"sprites": true
+		},
+		"historySize": 100,
+		"showCodes": true,
+		"gridSize": 16,
+		"showLiga": false,
+		"showGrid": true,
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"quickUsageToken": {
+			"UntitledProject1": "MzIyNjlkZTM1NjU5NDM2YTY4OWMxMGJhNjc5YjcyZGYjMiMxMzk0NTI4NDIzIyMj"
+		}
+	}
+}

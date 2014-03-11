@@ -14,6 +14,7 @@
     <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+    <link href="css/ecolor-icon-set/style.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
@@ -52,7 +53,31 @@
     <div class="container">
 
       <div class="home-intro-template">
-        <h1>ecolor dashboard</h1>
+        <div class="info-section stock-info-section">
+          <div class="info-sub-section stock-current-info">
+            <div class="info-wrapper">
+              <h2 class='info-head'>ECOLOR STOCK PRICE</h2>
+              <p class='info-sub-head stock-curency'>US Dollars</p>
+            </div>
+            <p class='info-important-number stock-current-value'>307.90</p>
+          </div>
+          <div class="info-sub-section stock-statistics-info">
+            <h2 class='info-head'>STOCK MARKET TRENDS</h2>
+            <p class='info-sub-head'>Thruout the year</p>
+            <div class="status-box">
+              <h3 class='info-head'>HIGHEST STOCK PRICE</h3>
+              <p class='info-number green'>505.3 <span class='iconmoon-icon icon-arrow-up-right'></span></p>
+            </div>
+            <div class="status-box stock-lowest">
+              <h3 class='info-head'>LOWEST STOCK PRICE</h3>
+              <p class='info-number red'>205.3<span class='iconmoon-icon icon-arrow-down-right'></span></p>
+            </div>
+            <div class="status-box stock-yoy-change">
+              <h3 class='info-head'>YOY CHANGE </h3>
+              <p class='info-number'>-15.3%</p>
+            </div>
+          </div>
+        </div>
         <p class="lead">This will be the ecolor dashboard prototype. It will contain some meaningfull data and will be the entry point of this application.</p>
        	<div class="chart-container">
        		<div id="chartContainer"></div>

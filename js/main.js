@@ -1,5 +1,9 @@
 require.config({
-    baseUrl: 'js/'
+    baseUrl: 'js/',
+    paths: {
+        "text" : "../lib/requiretext/text",
+        "tpl" : "../lib/requiretpl/tpl"
+    }
 });
 
 require(['core-apps/router'],function ( CoreAppsRouter ) {

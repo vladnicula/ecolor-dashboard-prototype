@@ -1,9 +1,12 @@
-define("core-apps/page/view", [], function () {
+define("core-apps/page/view", [
+  "tpl!./view.tpl"
+  ], function ( tpl ) {
 
   return Backbone.View.extend({
 
-    render : function () {
+    render : function (args) {
       var view = this;
+      view.setElement(tpl(args));
       return view;
     },
 

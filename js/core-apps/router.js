@@ -22,21 +22,19 @@
     },
 
     index : function () {
-      var router = this;
-      console.log("Should show indexview",DashboardView);
-      router.dashboardView = new DashboardView().render();
+      this.layout.showPage("index",DashboardView);
     },
 
     stock: function() {
-      
+      this.layout.showPage("stock",DashboardView);
     },
 
     invoices: function() {
-      
+      this.layout.showPage("invoices",DashboardView);
     },
 
     goods : function () {
-      
+      this.layout.showPage("goods",DashboardView);
     }
   });
 

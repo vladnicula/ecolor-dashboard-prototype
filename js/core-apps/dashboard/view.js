@@ -1,6 +1,8 @@
-define("core-apps/dashboard/view", [], function () {
+define("core-apps/dashboard/view", [
+  "../page/view"
+  ], function ( PageView ) {
 
-  return Backbone.View.extend({
+  return PageView.extend({
     render : function () {
       var secondChart = new CanvasJS.Chart("invoicesPerMonthChartContainer", {
           title:{
@@ -21,6 +23,7 @@ define("core-apps/dashboard/view", [], function () {
       });
 
       secondChart.render();
+      return this;
     }
   });
 });

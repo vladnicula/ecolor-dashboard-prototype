@@ -19,15 +19,15 @@ define("core-apps/layout-manager/view", [
           targetPage = view[pageName];
 
       if ( !targetPage ) {
-          targetPage = view[pageName] = new pageView().render();
+          targetPage = view[pageName] = new pageView().render({ pageName : pageName });
           view.app.append(targetPage.$el);
       } 
       
-      if ( view.currenPage ) {
-        view.currenPage.hide();
+      if ( view.currentPage ) {
+        view.currentPage.hide();
       }
 
-      targetPage.show();
+      view.currentPage = targetPage.show();
     }
 
   });

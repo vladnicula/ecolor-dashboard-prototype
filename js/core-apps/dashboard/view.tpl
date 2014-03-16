@@ -1,8 +1,7 @@
 <div class="container">
 
   <div class="home-intro-template">
-
-    <div class="info-section stock-info-section">
+    <div class="info-section stock-info-section" data-href='stock'>
       <div class="info-sub-section stock-current-info">
         <div class="info-wrapper">
           <h2 class='info-head'>ECOLOR STOCK PRICE</h2>
@@ -29,7 +28,7 @@
     </div>
     <!-- end info-section -->
 
-    <div class="info-section invoices-info-section">
+    <div class="info-section invoices-info-section" data-href='invoices'>
       <div class="info-sub-section invoices-untill-today">
         <div class="info-wrapper">
           <h2 class='info-head'>Invoices</h2>
@@ -43,7 +42,7 @@
     </div>
     <!-- end info-section -->
 
-    <div class="info-section production-info-section">
+    <div class="info-section production-info-section" data-href='goods'>
       <div class="info-sub-section production-status">
         <div class="info-wrapper">
           <h2 class='info-head'>Production status</h2>
@@ -85,7 +84,7 @@
       </div>
     </div>
     <!-- end info-section -->
-   	
+    
   </div>
 
 </div><!-- /.container -->

@@ -1,3 +1,3 @@
-<div class="page">
+<div class="page" data-page-name='<%= pageName %>'>
 	
 </div>

@@ -11,11 +11,28 @@ define("core-apps/page/view", [
     },
 
     hide : function () {
-      console.log("page view hide");
+      var view = this;
+      view.$el.addClass("after-entry").removeClass("current");
+      setTimeout( function () {
+        view.$el.hide();
+        view.$el.removeClass("after-entry");
+      }, 500);
+
+      return view;
     },
 
     show : function () {
-      console.log("page view show");
+      var view = this;
+      view.$el.addClass("before-entry no-animation");
+      view.$el.show();
+      setTimeout( function () {
+        view.$el.removeClass("no-animation");
+        setTimeout( function () {
+          view.$el.addClass("current");
+          view.$el.removeClass("before-entry");
+        },10);
+      }, 10);
+      return view;
     }
 
   });

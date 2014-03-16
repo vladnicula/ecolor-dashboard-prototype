@@ -1,7 +1,8 @@
  define('core-apps/router', [
   './layout-manager/view',
   './dashboard/view',
-  ], function ( LayoutManager, DashboardView ) {
+  './stock/view',
+  ], function ( LayoutManager, DashboardView, StockView ) {
   "use strict";
 
   return Backbone.Router.extend({
@@ -23,7 +24,7 @@
     },
 
     stock: function() {
-      this.layout.showPage("stock",DashboardView);
+      this.layout.showPage("stock",StockView);
     },
 
     invoices: function() {

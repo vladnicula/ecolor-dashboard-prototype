@@ -19,6 +19,9 @@ define("core-apps/stock/view", [
       },
 
       show : function () {
+
+        PageView.prototype.show.apply(this, arguments);
+
         var view = this,
           chart = new CanvasJS.Chart("stock-chart", {
             title:{
@@ -53,8 +56,6 @@ define("core-apps/stock/view", [
             }
             ]
           });
-
-        PageView.prototype.show.apply(this, arguments);
 
         chart.render();
         return this;

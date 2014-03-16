@@ -1,7 +1,7 @@
 <div class="container">
 
   <div class="home-intro-template">
-    <div class="info-section stock-info-section" data-href='stock'>
+    <div class="info-section stock-info-section">
       <div class="info-sub-section stock-current-info">
         <div class="info-wrapper">
           <h2 class='info-head'>ECOLOR STOCK PRICE</h2>
@@ -25,10 +25,13 @@
           <p class='info-number'>-15.3%</p>
         </div>
       </div>
+      <div class="page-link">
+        <h5><a href="#stock">stock details</a></h5>
+      </div>
     </div>
     <!-- end info-section -->
 
-    <div class="info-section invoices-info-section" data-href='invoices'>
+    <div class="info-section invoices-info-section">
       <div class="info-sub-section invoices-untill-today">
         <div class="info-wrapper">
           <h2 class='info-head'>Invoices</h2>
@@ -39,10 +42,14 @@
       <div class="info-sub-section invoices-chart">
         <div id="invoicesPerMonthChartContainer"></div>
       </div>
+
+      <div class="page-link">
+        <h5><a href="#invoices">invoice raport</a></h5>
+      </div>
     </div>
     <!-- end info-section -->
 
-    <div class="info-section production-info-section" data-href='goods'>
+    <div class="info-section production-info-section">
       <div class="info-sub-section production-status">
         <div class="info-wrapper">
           <h2 class='info-head'>Production status</h2>
@@ -81,6 +88,9 @@
           <p class='info-number red'>92<span class='iconmoon-icon icon-arrow-down-right'></span></p>
         </div>
 
+      </div>
+      <div class="page-link">
+        <h5><a href="#goods">production raport</a></h5>
       </div>
     </div>
     <!-- end info-section -->

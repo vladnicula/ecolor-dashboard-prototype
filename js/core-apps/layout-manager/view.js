@@ -36,6 +36,9 @@ define("core-apps/layout-manager/view", [
       } 
       
       if ( view.currentPage ) {
+        if ( view.currentPage === targetPage ) {
+          return;
+        }
         view.currentPage.hide();
       }
 

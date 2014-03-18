@@ -2,8 +2,9 @@
   './layout-manager/view',
   './dashboard/view',
   './stock/view',
-  './invoices/view'
-  ], function ( LayoutManager, DashboardView, StockView, InvoicesView ) {
+  './invoices/view',
+  './goods/view'
+  ], function ( LayoutManager, DashboardView, StockView, InvoicesView, GoodsView ) {
   "use strict";
 
   return Backbone.Router.extend({
@@ -33,7 +34,7 @@
     },
 
     goods : function () {
-      this.layout.showPage("goods",DashboardView);
+      this.layout.showPage("goods",GoodsView);
     }
   });
 

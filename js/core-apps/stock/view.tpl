@@ -2,6 +2,10 @@
 
   <div class="home-intro-template">
 	<div class="info-section stock-info-section">
+		<ul class="nav nav-tabs">
+		  <li class="active"><a href="#stock">Stock Chart</a></li>
+		  <li><a href="#stock">Stock Table</a></li>
+		</ul>
 		<div class="info-sub-section stock-chart-section">
 			<div class="chart-container" id='stock-chart'></div>
 		</div>

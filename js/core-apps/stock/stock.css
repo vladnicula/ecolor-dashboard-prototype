@@ -3,6 +3,8 @@
 	padding-top: 50%;
 	position: relative;
 	overflow: hidden;
+	border : 1px solid #ddd;
+	border-top : none;
 }
 
 .info-section .info-sub-section .chart-container {
@@ -11,4 +13,13 @@
 	left : 0;
 	width: 100%;
 	height: 100%;
+}
+
+.stock-info-section .nav-tabs>li.active>a,
+.stock-info-section .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+	background: #fafafa;
+}
+
+.stock-info-section .nav-tabs>li>a {
+	font-family: "Oswald", san-serif;
 }

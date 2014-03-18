@@ -13,7 +13,7 @@
       "dashboard" : "dashboard",
       "stock": "stock",
       "invoices": "invoices", 
-      "goods": "goods" 
+      "goods": "goods"
     },
 
     initialize: function() {

@@ -1,5 +1,6 @@
 define("core-apps/layout-manager/view", [
-  ], function () {
+  "core-apps/top-navi/view"
+  ], function ( TopNaviView ) {
 
   var instance = null;
 
@@ -22,6 +23,8 @@ define("core-apps/layout-manager/view", [
 
       view.setElement($("#viewport"));
       view.app = view.$("#app-content");
+      
+      view.topMenu = new TopNaviView({ target : view.$(".navbar.navbar-top .nav.navbar-nav")}).render();
 
       return view;
     },
@@ -43,6 +46,7 @@ define("core-apps/layout-manager/view", [
       }
 
       view.currentPage = targetPage.show();
+      view.topMenu.select(pageName);
     }
 
   });

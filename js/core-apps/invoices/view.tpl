@@ -11,11 +11,32 @@
 	        <p class='info-important-number stock-current-value'>1200</p>
 		</div>
 
-		<ul class="nav nav-tabs">
-		  <li class="active"><a href="#stock">Invoices per month</a></li>
-		  <li><a href="#stock">Invoices by filter</a></li>
+		<div class="info-sub-section invoice-revenue invoice-revenue-today">
+			<div class="info-wrapper">
+			  <h2 class='info-head'>Revenue today</h2>
+			  <p class='info-sub-head stock-curency'>Paid or to be paid</p>
+			</div>
+			<p class='info-important-number stock-current-value'>13500</p>
+		</div>
+
+		<div class="info-sub-section invoice-revenue invoice-revenue-last-year">
+			<div class="info-wrapper">
+			  <h2 class='info-head'>Same day last year</h2>
+			  <p class='info-sub-head stock-curency'>Paid</p>
+			</div>
+			<p class='info-important-number stock-current-value'>11500</p>
+		</div>
+
+		<ul class="nav nav-tabs invoice-subpage-navigation">
+		  <li data-sub-page-link='main'><a href="#invoices">Invoices per month</a></li>
+		  <li data-sub-page-link='report'><a href="#invoices/report">Monthly report</a></li>
 		</ul>
-		<div class="info-sub-section invoices-table">
+
+		<div data-only-visible-on='report' class="info-sub-section chart-raport">
+			<div id="invoice-chart"></div>
+		</div>
+
+		<div data-only-visible-on='main' class="info-sub-section invoices-table">
 			<table>
 			<thead>
 			<tr>

@@ -33,6 +33,10 @@ define("core-apps/page/view", [
         },10);
       }, 10);
       return view;
+    },
+
+    subPage : function ( subPageName ) {
+      
     }
 
   });

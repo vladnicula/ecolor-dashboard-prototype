@@ -39,8 +39,19 @@
         </div>
         <p class='info-important-number stock-current-value'>1200</p>
       </div>
-      <div class="info-sub-section invoices-chart">
-        <div id="invoicesPerMonthChartContainer"></div>
+      <div class="info-sub-section invoice-revenue invoice-revenue-today">
+        <div class="info-wrapper">
+          <h2 class='info-head'>Revenue today</h2>
+          <p class='info-sub-head stock-curency'>Paid or to be paid</p>
+        </div>
+        <p class='info-important-number stock-current-value'>13500</p>
+      </div>
+      <div class="info-sub-section invoice-revenue invoice-revenue-last-year">
+        <div class="info-wrapper">
+          <h2 class='info-head'>Same day last year</h2>
+          <p class='info-sub-head stock-curency'>Paid</p>
+        </div>
+        <p class='info-important-number stock-current-value'>11500</p>
       </div>
 
       <div class="page-link">

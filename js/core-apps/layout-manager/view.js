@@ -29,7 +29,7 @@ define("core-apps/layout-manager/view", [
       return view;
     },
 
-    showPage : function ( pageName, pageView ) {
+    showPage : function ( pageName, pageView, subPageKey ) {
       var view = this,
           targetPage = view[pageName];
 
@@ -40,12 +40,14 @@ define("core-apps/layout-manager/view", [
       
       if ( view.currentPage ) {
         if ( view.currentPage === targetPage ) {
+          view.currentPage.subPage(subPageKey);
           return;
         }
         view.currentPage.hide();
       }
 
       view.currentPage = targetPage.show();
+      view.currentPage.subPage(subPageKey);
       view.topMenu.select(pageName);
     }
 

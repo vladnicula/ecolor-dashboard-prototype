@@ -1,9 +1,39 @@
-.invoices.view .invoices-untill-today {
+.invoices-table {
 	width: 100%;
 }
 
-.invoices-table {
+.invoices.view .info-section .info-sub-section.invoices-untill-today {
+	padding-top : 20px;
+}
+
+[data-only-visible-on] {
+	display: none;
+}
+
+.main [data-only-visible-on='main'] {
+	display: block;
+}
+
+.report [data-only-visible-on='report'] {
+	display: block;
+}
+
+.info-sub-section.chart-raport {
 	width: 100%;
+	padding: 50% 0 0 0;
+	position: relative;
+	overflow: hidden;
+}
+
+#invoice-chart {
+	position: absolute;
+	top : 0;
+	width: 100%;
+	height: 100%;
+}
+
+.invoice-subpage-navigation {
+	clear: both;
 }
 
 /* 

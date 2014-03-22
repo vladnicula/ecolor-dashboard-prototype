@@ -32,7 +32,7 @@ define("core-apps/stock/view", [
           chart = new CanvasJS.Chart("stock-chart", {
             backgroundColor : "#FAFAFA",
             title:{
-              text: "STOCK VALUE",
+              text: "REVENUE PER MONTH",
               fontFamily : "'Oswald'",
               fontWeight : "lighter",
               fontSize : "20"

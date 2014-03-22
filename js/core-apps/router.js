@@ -13,6 +13,7 @@
       "dashboard" : "dashboard",
       "stock": "stock",
       "invoices": "invoices", 
+      "invoices/:subpage": "invoices", 
       "goods": "goods"
     },
 
@@ -29,8 +30,8 @@
       this.layout.showPage("stock",StockView);
     },
 
-    invoices: function() {
-      this.layout.showPage("invoices",InvoicesView);
+    invoices: function(subpage) {
+      this.layout.showPage("invoices",InvoicesView, subpage);
     },
 
     goods : function () {

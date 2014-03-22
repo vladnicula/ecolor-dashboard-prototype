@@ -1,7 +1,10 @@
-<div class="container invoices view">
+<div class="container goods view">
 
   <div class="home-intro-template">
-	<div class="info-section stock-info-section">
+	<div class="info-section">
+		<div class="info-sub-section product-history-chart">
+	  		<div class='chart-container' id="product-history-chart"></div>
+	  	</div>
 		<div class="info-sub-section invoices-table">
 			<table>
 			<thead>

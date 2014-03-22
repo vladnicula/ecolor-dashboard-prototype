@@ -23,3 +23,11 @@
 .stock-info-section .nav-tabs>li>a {
 	font-family: "Oswald", san-serif;
 }
+
+
+
+@media screen and (max-width: 550px) {
+	.info-section .info-sub-section .chart-container {
+		pointer-events : none;
+	}
+}

@@ -61,7 +61,10 @@ define("core-apps/goods/view", [
 
         setTimeout( function () {
           chart.render();
-        }, 500);
+          setTimeout( function () {
+            chart.render();
+          }, 350);
+        }, 10);
 
         return chart;
       },

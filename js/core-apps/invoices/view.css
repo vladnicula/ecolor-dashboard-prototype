@@ -32,6 +32,13 @@
 	height: 100%;
 }
 
+
+@media screen and (max-width: 550px) {
+	.info-sub-section.chart-raport {
+		pointer-events : none;
+	}
+}
+
 .invoice-subpage-navigation {
 	clear: both;
 }

@@ -5,6 +5,10 @@ define("core-apps/top-navi/view", [
 
   return Backbone.View.extend({
 
+    events : {
+      "click [data-page-link]" : "hideMenu"
+    },
+
     initialize : function (options) {
       this.options = options;
       if ( instance ) {
@@ -21,7 +25,7 @@ define("core-apps/top-navi/view", [
 
       instance = this;
       view.setElement(view.options.target);
-
+      console.log("el", this.$el);
       return view;
     },
 
@@ -33,6 +37,10 @@ define("core-apps/top-navi/view", [
       }
 
       view.currentElement = view.$("[data-page-link='"+pageName+"']").addClass("active");      
+    },
+
+    hideMenu : function () {
+      this.$el.closest('.navbar-collapse').removeClass("in");
     }
 
   });

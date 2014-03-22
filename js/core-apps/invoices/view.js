@@ -36,7 +36,7 @@ define("core-apps/invoices/view", [
           chart = new CanvasJS.Chart("invoice-chart", {
             backgroundColor : "#FAFAFA",
             title:{
-              text: "STOCK VALUE",
+              text: "REVENUE PER MONTH",
               fontFamily : "'Oswald'",
               fontWeight : "lighter",
               fontSize : "20"
@@ -45,8 +45,8 @@ define("core-apps/invoices/view", [
             axisY: axisFontDeclaration,
 
             data: [{        
-              type: "line", //or stackedColumn
-              toolTipContent: "{label} 2013 Stock Value {y}",
+              type: "column", //or stackedColumn
+              toolTipContent: "{label} 2013 REVENUE {y}",
               dataPoints: [
               { x: 10, y: 290, label: "Jan" },
               { x: 20, y: 155, label: "Feb" },
@@ -62,12 +62,12 @@ define("core-apps/invoices/view", [
               { x: 120, y: 291, label: "Dec" }
               ]
             },{        
-              type: "line", //or stackedColumn
-              toolTipContent: "{label} 2014 Stock Value {y}",
+              type: "column", //or stackedColumn
+              toolTipContent: "{label} 2014 REVENUE {y}",
               dataPoints: [
               { x: 10, y: 305, label: "Jan"  },
-              { x: 20, y: 302, label: "Feb" },
-              { x: 30, y: 301, label: "Mar"  }
+              { x: 20, y: 402, label: "Feb" },
+              { x: 30, y: 450, label: "Mar"  }
               ]
             }
             ]

@@ -26,7 +26,7 @@
 
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 750px) {
 	.info-section .info-sub-section .chart-container {
 		pointer-events : none;
 	}
